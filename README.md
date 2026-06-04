@@ -95,11 +95,6 @@ DSA3050A-Advanced-PowerBI-Exam/
 └── README.md
 ```
 
-## Links
+## Link
 
 - **Dataset (Kaggle):** [Brazilian E‑Commerce Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-- **Power BI file:** (upload your .pbix or provide a link if size permits)
-
-
-
-If everything is ready, you can submit. Congratulations on completing the advanced Power BI exam. If you need any last‑minute adjustments, tell me now.
