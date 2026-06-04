@@ -1,9 +1,6 @@
-# DSA 3050A Advanced Power BI Exam – E‑commerce Analytics
+# DSA 3050A Advanced Power BI – E‑commerce Analytics
 
-**Student Name:** Hope Kimandi  
-**Admission Number:** 670317 
-**Course:** DSA 3050A  
-**Class:** SS 2026  
+**Name:** Hope Kimandi  
 
 ## Project Overview
 
@@ -28,7 +25,7 @@ As a BI analyst, I needed to answer key business questions for an online marketp
 - Power Query (data cleaning and transformation)
 - DAX (measures and calculated columns)
 
-## Steps Followed (Exam Parts)
+## Steps Followed 
 
 1. **Data Acquisition (Part A)** – I loaded the CSV files and documented the raw data, variables, and relationships.
 2. **Data Cleaning (Part B)** – In Power Query, I performed over eight transformations: promoted headers, changed data types, removed nulls, replaced missing values, added conditional columns, extracted date parts, merged the translation table, and removed duplicates.
@@ -42,7 +39,6 @@ As a BI analyst, I needed to answer key business questions for an online marketp
 
 ## Dashboard Features
 
-- **Professional theme** (Corporate) with consistent colours, fonts, and layout.
 - **Interactivity:** Slicers for year, state, payment type; cross‑filtering across all visuals.
 - **Drill‑down:** Matrix on Page 2 supports year → quarter → month exploration.
 - **Advanced visual:** Decomposition tree and scatter plot with trend line.
@@ -59,7 +55,7 @@ As a BI analyst, I needed to answer key business questions for an online marketp
 - `Total Quantity = COUNTROWS(order_items)`
 - `Average Order Value = DIVIDE([Total Sales], DISTINCTCOUNT(orders[order_id]))`
 
-## Key Insights (from Part F)
+## Key insights (from Part F)
 
 1. Top three product categories contribute over 45% of revenue – a concentration risk.
 2. The Southeast region accounts for nearly 70% of sales, while the North region is underperforming.
@@ -67,19 +63,19 @@ As a BI analyst, I needed to answer key business questions for an online marketp
 4. Sales peak in November/December and drop sharply in January/February (post‑holiday slump).
 5. A few products have freight costs exceeding 50% of the product price, indicating profitability issues.
 
-## Challenges Encountered and How I Solved Them
+## Challenges encountered and their solutions
 
 - **Null values in product categories and order status** – I replaced them with "unknown" in Power Query.
 - **Date table relationships** – I initially struggled with time intelligence measures showing zeros. I solved this by creating a clean date column using `Date.From` in Power Query and marking the date table explicitly.
 - **Previous month sales measure** – I rewrote it using `DATEADD` and ensured the relationship was active.
 - **Merging translation table** – I used a left outer merge to bring English category names without losing products.
 
-## Repository Structure
+## Repository structure
 
 ```
-DSA3050A-Advanced-PowerBI-Exam/
+DSA3050A-317/
 ├── powerbi/
-│   └── DSA3050A_Olist_Solution.pbix
+│   └── BI_317.pbix
 ├── screenshots/
 │   ├── Part_A/
 │   ├── Part_B/
@@ -88,7 +84,7 @@ DSA3050A-Advanced-PowerBI-Exam/
 │   ├── Part_E/
 │   └── Part_F/
 ├── report/
-│   └── DSA3050A_Exam_Report.pdf
+│   └── Documentation.pdf
 └── README.md
 ```
 
