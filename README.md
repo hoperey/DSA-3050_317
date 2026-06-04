@@ -74,9 +74,6 @@ As a BI analyst, I needed to answer key business questions for an online marketp
 - **Previous month sales measure** – I rewrote it using `DATEADD` and ensured the relationship was active.
 - **Merging translation table** – I used a left outer merge to bring English category names without losing products.
 
-## Conclusion
-
-
 ## Repository Structure
 
 ```
